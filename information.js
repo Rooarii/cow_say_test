@@ -3,8 +3,14 @@ const info = {
     campus:'Wild Code chool - Toulouse'
 }
 
+const cowsay = require("cowsay");
 const myInfos = () => {
-    console.log(`Hi my name is ${info['name']}, I'm studying web developmentat ${info['campus']}`);
+    console.log(cowsay.say({
+        text : `Hi my name is ${info.name}, I'm studying web developmentat ${info.campus}`,
+        e : "oO",
+        T : "U "
+    }));
+    console.log();
 };
 
 
